@@ -1,0 +1,49 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/about">About</a></li>
+    <li class="active"><a ng-href="#/download">Download</a></li>
+    <li><a ng-href="#/documentation">Documentation</a></li>
+    <li><a ng-href="http://blog.xzero.io">Blog</a></li>
+    <li><a ng-href="https://github.com/xzero/x0">Github</a></li>
+  </ul>
+  <h3 class="text-muted">Xzero HTTP Web Server & Framework</h3>
+</div>
+
+<div class="jumbotron">
+  <h1>Download Xzero!</h1>
+  <p class="lead">
+    The latest version was just released.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="https://github.com/xzero/x0/archive/0.8.0.tar.gz">Download Sources for 0.8.0!</a></p>
+</div>
+
+<div class="row marketing">
+  <h4>Installing for Ubuntu 14.04 (Trusty Tahr)</h4>
+  <p>
+    <p>You can easily try us out via our PPA:</p>
+
+    <code>sudo apt-add-repository ppa:trapni/xzero</code><br/>
+    <code>sudo apt-get update</code><br/>
+    <code>sudo apt-get install x0d</code><br/>
+    <code>sudo cp /etc/xzero/x0d.conf-dist /etc/xzero/x0d.conf</code><br/>
+    <code>sudo initctl start x0d</code><br/>
+  </p>
+
+  <h4>Installing for Docker</h4>
+  <p>
+    <p>This is how it could look like when running Xzero via docker abstraction.</p>
+
+    <code>docker pull trapni/xzero-git</code> <br/>
+    <code>docker run -i -p 80:80 -v /etc/xzero:/etc/xzero -v /var/www:/var/www trapni/xzero-git</code>
+  </p>
+
+  <h4>Installing from Sources</h4>
+  <p>
+    Please refer to the source code's documentation, also found at:
+    <a href="https://github.com/xzero/x0/blob/master/README.md#how-to-build">https://github.com/xzero/x0/blob/master/README.md#how-to-build</a>
+  </p>
+</div>
+
+<div class="footer">
+</div>
