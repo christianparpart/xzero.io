@@ -11,7 +11,7 @@
 ```
 git clone $GITREPO xzero.io/
 cd xzero.io
-bower install
+bower install && npm install
 grunt server
 ```
 
