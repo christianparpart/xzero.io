@@ -19,6 +19,35 @@
 </div>
 
 <div class="row marketing">
+  <h4>2014-04-13, Version 0.9.0 Released</h4>
+  <p>
+    Most prominent changes include:
+    <ul>
+      <li> flow: Added support for builtin handler/function overloading. </li>
+      <li> flow: Added support for array assignments to variables. </li>
+      <li> flow: Added support for unary bit-wise NOT operator. </li>
+      <li> flow: Improved internal constant value handling. </li>
+      <li> flow: Improved array handling, also resulting into runtime performance boosts and better semantic verifications. </li>
+      <li> flow: Improved interpreter loop performance (uses direct threading). </li>
+      <li> flow: Improved IR-optimization passes &amp; enabled optimizations by default</li>
+      <li> flow: Improved builtin callee user-verification to use (optimized) IR instead of AST now. </li>
+      <li> flow: Dropped superfluous VM opcodes. </li>
+      <li> flow: Fixes to all boolean operators. </li>
+      <li> flow: Fixes use of large integer constants in expressions. </li>
+      <li> flow: Fixes "superfluous params" error message. </li>
+      <li> x0d: builtin workers() is now overloaded for workers(I)V and workers(i)V; no workers.affinity(i)V anymore. </li>
+      <li> x0d: memory resource leak fixes upon program exit. </li>
+      <li> x0d: Fixed precompressed() handler. </li>
+      <li> plugins: new plugin "access" for basic IP &amp; CIDR network based access control. </li>
+      <li> director: Adds an option to directly respond with 503 instead of enqueuing the request when the complete cluster is down. </li>
+      <li> director: Fixed bug in HTTP and FastCGI backends that caused hanging client connections on offline backends. </li>
+      <li> accesslog: Uses non-blocking log-file writes. Improves performance within the networking code. </li>
+      <li> doc: x0d man-page extended to  describe error severities. </li>
+    </ul>
+
+    For a complete list of changes, please check <a href="https://github.com/xzero/x0/commits/">https://github.com/xzero/x0/commits/</a>
+  </p>
+
   <h4>2014-03-23, Version 0.8.0 Released</h4>
   <p>
     Most prominent changes include:
