@@ -19,6 +19,38 @@
 </div>
 
 <div class="row marketing">
+  <h4>2014-07-03, Version 0.10.0 Released</h4>
+  <p>
+    Most prominent changes include:
+    <ul>
+      <li> project: changed from AGPL-3 license to MIT license. </li>
+      <li> flow: Fixes infinite loop in match-statements without else block. </li>
+      <li> flow: Fixes crash on empty arrays. </li>
+      <li> flow: Adds the ability to parse function call expressions without round braces. </li>
+      <li> http: Fixes to request path decoding. </li>
+      <li> http: Fixes assert() in response write timeout handling. </li>
+      <li> http: Fixes HttpConnection-leak (caused by start()'s readSome() without wantRead()-invokation). </li>
+      <li> http: Rework http request body handling (much simpler implementation, removing lots of state-management complexity). </li>
+      <li> x0d: Adds req.accept_language(string[] supportedLanguages). </li>
+      <li> x0d: Adds SIGTTIN/SIGTTOU signal handling for incrementing/decrementing log level. </li>
+      <li> x0d: Adds sys.hostname() shared function. </li>
+      <li> x0d: Fixes sys.env(string name). </li>
+      <li> x0d: Fixes to req.header(S)S and req.cookie(S)S signatures. </li>
+      <li> x0d: Fixes header.*() methods to apply their actions right before the headers get serialized. </li>
+      <li> x0d: Fixes SIGHUP handler. </li>
+      <li> x0d: redirect() and respond() have been both redesigned and renamed into return() to be more familiar with nginx configuration. </li>
+      <li> director: Adds support different modes how to react on early client aborts. </li>
+      <li> director: Adds the ability to tweak the Via response header's pseudonym name, that defaults to "x0d". </li>
+      <li> accesslog: Adds support custom log format lines </li>
+      <li> accesslog: Adds support logging into multiple log targets </li>
+      <li> status: Adds a `status.api()` handler that generates a JSON formatted server status response </li>
+      <li> cgi: Adds `cgi.max_scripts(I)` setup function to constraing maximum number of concurrently running CGI scripts. </li>
+    </ul>
+
+    For a complete list of changes, please check <a href="https://github.com/xzero/x0/commits/">https://github.com/xzero/x0/commits/</a>
+  </p>
+
+<div class="row marketing">
   <h4>2014-04-13, Version 0.9.0 Released</h4>
   <p>
     Most prominent changes include:
